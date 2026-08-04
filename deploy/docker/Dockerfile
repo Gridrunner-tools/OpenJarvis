@@ -80,6 +80,7 @@ USER openjarvis
 
 EXPOSE 8000
 
-ENTRYPOINT ["/bin/sh", "-c", "jarvis serve --host 0.0.0.0 --port 8000 --engine cloud"]
+ENTRYPOINT ["/bin/sh", "-c", "jarvis serve --host 0.0.0.0 --port 8000 --engine cloud --model gemini-3-flash"]
+
 
 
