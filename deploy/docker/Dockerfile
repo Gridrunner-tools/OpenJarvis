@@ -80,5 +80,5 @@ USER openjarvis
 
 EXPOSE 8000
 
-ENTRYPOINT ["jarvis"]
-CMD ["serve", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["/bin/sh", "-c", "jarvis init --force && exec jarvis serve --host 0.0.0.0 --port 8000"]
+
